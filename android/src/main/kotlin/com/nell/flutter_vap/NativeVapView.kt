@@ -31,7 +31,7 @@ internal class NativeVapView(binaryMessenger: BinaryMessenger, context: Context,
     private var methodResult: MethodChannel.Result? = null
 
     init {
-        vapView.setScaleType(ScaleType.FIT_CENTER)
+        vapView.setScaleType(ScaleType.CENTER_CROP)
         vapView.setAnimListener(object : IAnimListener {
             override fun onFailed(errorType: Int, errorMsg: String?) {
                 GlobalScope.launch(Dispatchers.Main) {

@@ -180,7 +180,7 @@ class ScaleTypeUtil {
     private var videoWidth = 0
     private var videoHeight = 0
 
-    var currentScaleType = ScaleType.FIT_XY
+    var currentScaleType = ScaleType.FIT_CENTER
     var scaleTypeImpl: IScaleType? = null
 
     fun setLayoutSize(w: Int, h: Int) {
